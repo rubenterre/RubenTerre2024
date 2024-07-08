@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+  }
+  
+  @font-face {
+    font-family: Poppins-Regular;
+    src: url(./fonts/Poppins-Regular.ttf);
+  }
+
+  @font-face {
+    font-family: Poppins-Medium;
+    src: url(./fonts/Poppins-Medium.ttf);
+  }
+
+  @font-face {
+    font-family: Poppins-Bold;
+    src: url(./fonts/Poppins-Bold.ttf);
+  }
+
+  //Colores
+  $color-fondo: #08000D;
+  $color-principal: white;
+  $color-secundario: #5C47E0;
+  $color-terciario: #171819;
+  $color-cuaternario: #979797;
+  $fuente-principal: Poppins-Regular;
+  $fuente-secundario: Poppins-Medium;
+  $fuente-principal: Poppins-Bold;
+  
+  body {
+   background: $color-fondo;
+   color: $color-principal;
+   -webkit-font-smoothing: antialiased;
+   font-family: Poppins-Regular;
+  }
+  
+  body, input, button {
+   font-size: 1rem;
+   font-family: Poppins-Regular;
+  }
+  
+  button {
+   cursor: pointer;
+  }
+
+  .sidenav{
+    background: $color-secundario;
+}
