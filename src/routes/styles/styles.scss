@@ -28,24 +28,55 @@
   $color-cuaternario: #979797;
   $fuente-principal: Poppins-Regular;
   $fuente-secundario: Poppins-Medium;
-  $fuente-principal: Poppins-Bold;
+  $fuente-bold: Poppins-Bold;
   
   body {
    background: $color-fondo;
    color: $color-principal;
    -webkit-font-smoothing: antialiased;
-   font-family: Poppins-Regular;
+   font-family: $fuente-principal;
   }
   
   body, input, button {
    font-size: 1rem;
-   font-family: Poppins-Regular;
+   font-family: $fuente-principal;
   }
   
   button {
    cursor: pointer;
   }
 
-  .sidenav{
-    background: $color-secundario;
-}
+
+  // Estilos de componente globales
+
+  .main__titulares{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .main__h3{
+    color: $color-principal;
+    font-family: $fuente-bold;
+    font-size: 1.1rem;
+    font-weight: 700;
+    font-style: Bold;
+    letter-spacing: 0px;
+    text-align: center;
+  }
+
+  .main__p{
+   
+    color: $color-principal;
+    font-family: $fuente-principal;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    padding: 20px 0px;
+  }
+
+  .main__linea{
+    width: 58px;
+    height: 2px;
+    background-color: $color-secundario;
+  }

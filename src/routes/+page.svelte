@@ -1,5 +1,9 @@
 <script>
-    import Inicio from "./components/Inicio.svelte"
+    import Habilidades from "./components/Habilidades.svelte";
+import Inicio from "./components/Inicio.svelte"
+	import Servicios from "./components/Servicios.svelte";
 </script>
 
 <Inicio></Inicio>
+<Servicios></Servicios>
+<Habilidades></Habilidades>
