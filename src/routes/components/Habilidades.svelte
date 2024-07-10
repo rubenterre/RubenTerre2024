@@ -32,6 +32,33 @@
 		}
 	];
 
+	export let design = [
+		{
+			icon: 'indesign_icon',
+			name: 'InDesign'
+		},
+		{
+			icon: 'photoshop_icon',
+			name: 'Photoshop'
+		},
+		{
+			icon: 'illustrator_icon',
+			name: 'Illustrator'
+		},
+		{
+			icon: 'after-effects_icon',
+			name: 'After Effects'
+		},
+		{
+			icon: 'sketch_dark_icon',
+			name: 'Sketch'
+		},
+		{
+			icon: 'figma_icon',
+			name: 'Figma'
+		}
+	];
+
 	onMount(() => {
 		console.log('Componente montado');
 	});
@@ -47,7 +74,7 @@
 					<div class="main__linea"></div>
 				</div>
 				<div class="habilidades__sections">
-					<h3 class="habilidades__h3">▶︎ Desarrollo web</h3>
+					<h3 class="habilidades__h3">Desarrollo web</h3>
 					<div class="habilidades__cards">
 						{#each desarrollo as habilidad}
 							<div class="habilidades__card">
@@ -60,9 +87,9 @@
 							</div>
 						{/each}
 					</div>
-                    <h3 class="habilidades__h3">▶︎ Diseño gráfico</h3>
+                    <h3 class="habilidades__h3">Diseño gráfico</h3>
 					<div class="habilidades__cards">
-						{#each desarrollo as habilidad}
+						{#each design as habilidad}
 							<div class="habilidades__card">
 								<img
 									class="habilidades__icon"
@@ -82,20 +109,25 @@
 <style>
 	.habilidades__sections {
 		margin: 20px 0px;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
 	}
 
 	.habilidades__h3 {
-		margin: 20px 0px;
+		margin: 30px 0px;
 		color: var(--color-principal);
 		font-family: var(--fuente-principal);
 		font-size: 1rem;
+		text-decoration: underline;
 	}
 
     .habilidades__cards{
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        justify-content: left;
+        justify-content: center;
         gap: 10px;
     }
 

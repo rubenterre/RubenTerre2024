@@ -69,7 +69,7 @@
 		--color-principal: white;
 		--color-secundario: #5c47e0;
 		--color-terciario: #171819;
-		--color-cuaternario: #979797;
+		--color-cuaternario: #8A82E5;
 	}
 
 	button {
