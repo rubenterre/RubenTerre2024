@@ -60,7 +60,7 @@
 				<div class="proyectos__cards">
 					{#each proyectos as proyecto}
 						<div class="proyectos__card">
-							<div class="proyectos__img">
+							<div class="proyectos__img hide-on-med-and-down">
 								<img
 									src="projects/{proyecto.banner}"
 									alt={proyecto.name}
@@ -111,8 +111,8 @@
 		border-radius: 8px;
 		border: 1px solid rgba(151, 151, 151, 1);
 		background-color: rgba(23, 24, 25, 1);
-		width: 451px;
-		height: 193px;
+	    width: 48%;
+        height: 200px;
 	}
 
 	.proyectos__detalles {
@@ -123,9 +123,18 @@
 		justify-content: space-around;
 	}
 
+    /* .proyectos__img{
+        position: relative;
+      width: 100%;
+      height: 30vh;
+      overflow: hidden; 
+    } */
+
 	.proyectos__banner {
 		border-top-left-radius: 8px;
 		border-bottom-left-radius: 8px;
+       height: 100%;
+     
 	}
 
 	.proyectos__h4 {
@@ -175,4 +184,10 @@
 		text-align: center;
         padding: 5px 0px;
 	}
+
+    @media screen and (max-width:480px){
+        .proyectos__card {
+            width: 100%;
+        }
+    }
 </style>

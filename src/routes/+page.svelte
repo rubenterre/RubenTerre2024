@@ -1,5 +1,7 @@
 <script>
-    import Habilidades from "./components/Habilidades.svelte";
+    import Experiencia from "./components/Experiencia.svelte";
+	import Formacion from "./components/Formacion.svelte";
+import Habilidades from "./components/Habilidades.svelte";
 import Inicio from "./components/Inicio.svelte"
 	import Proyectos from "./components/Proyectos.svelte";
 	import Servicios from "./components/Servicios.svelte";
@@ -9,3 +11,5 @@ import Inicio from "./components/Inicio.svelte"
 <Servicios></Servicios>
 <Habilidades></Habilidades>
 <Proyectos></Proyectos>
+<Experiencia></Experiencia>
+<Formacion></Formacion>
