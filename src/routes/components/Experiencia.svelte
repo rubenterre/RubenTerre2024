@@ -84,6 +84,11 @@
 </section>
 
 <style>
+
+.experiencia{
+	margin: 60px 0px;
+}
+
 	.experiencia__cards {
 		margin: 20px 0px;
         display: flex;

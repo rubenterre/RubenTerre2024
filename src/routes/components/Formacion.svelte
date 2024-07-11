@@ -85,6 +85,11 @@
 </section>
 
 <style>
+
+.formacion{
+	margin: 60px 0px;
+}
+
 	.formacion__cards {
 		margin: 20px 0px;
         display: flex;

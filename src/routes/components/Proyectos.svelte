@@ -94,7 +94,7 @@
 
 <style>
 	.proyectos {
-		margin-top: 20px;
+		margin: 60px 0px;
 	}
 
 	.proyectos__cards {
@@ -188,6 +188,12 @@
     @media screen and (max-width:480px){
         .proyectos__card {
             width: 100%;
+        }
+    }
+
+	@media screen and (max-width:1024px){
+        .proyectos__img {
+            display: none;
         }
     }
 </style>
